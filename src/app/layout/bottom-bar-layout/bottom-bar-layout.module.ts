@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BottomBarLayoutComponent } from './bottom-bar-layout.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -9,7 +10,8 @@ import { BottomBarLayoutComponent } from './bottom-bar-layout.component';
     BottomBarLayoutComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     BottomBarLayoutComponent
