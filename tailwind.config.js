@@ -7,17 +7,18 @@ module.exports = {
       xl: '1440px',
     },
     colors: {
-      'blue': '#1fb6ff',
-      'purple': '#7e5bef',
-      'pink': '#ff49db',
-      'orange': '#ff7849',
-      'green': '#13ce66',
-      'yellow': '#ffc82c',
-      'gray-dark': '#273444',
-      'gray': '#8492a6',
-      'gray-light': '#d3dce6',
-      'theme-blue-5':'#000C19',
-      'theme-gray-3':'#868686'
+      'blue'    : '#1fb6ff',
+      'purple'  : '#692BEC',        //purple
+      'textcolor'     : '#434343',      //text
+      'searchboxgray' : '#E1E1E1',  // search box background
+      'disabledgray'  : '#D0D0D0',  //disabled 
+      'bodygray'   : '#F4F8F8', //body
+      'liteyellow' : '#FFFADC', //yellow light
+      'yellow'     : '#FFD43D', //yellow
+      'litepink'   : '#FF1F6', // pink light
+      'pink'      : '#FB377E', //pink
+      'litegreen' : '#E9FFF4', // green light 
+      'green'     : '#00A858', //green
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
