@@ -13,7 +13,7 @@ export const appRoutes: Routes = [
         path:'app',
         component:LayoutComponent,
         children:[
-            
+            { path:'home' , loadChildren : () => import('../app/modules/home/home.module').then( m => m.HomeModule ) }
         ]
     },
    
