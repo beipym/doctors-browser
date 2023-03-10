@@ -1,43 +1,41 @@
-<div class="doctors-list ">
-    <div class="flex flex-row-reverse bg-blue-400 h-20 w-full shadow p-4 justify-between">
+<div class="doctors-list" dir="rtl">
 
-        <div class="search-input-container flex flex-col relative">
-            <input type="text  ">
-            <span class="absolute  ">search icon</span>
+    <div class="flex flex-row bg-white h-18 w-full shadow p-4 justify-between gap-4">
+
+        <div class="search-input-container flex flex-col relative w-full">
+            <input class="h-8 w-full rounded bg-gray-300 indent-6 text-xs" placeholder="جست و جوی نام،کد پذیرش و ..."  type="text">
+            
+            <fa-icon class="absolute text-xs p-2" [icon]="faSearch"></fa-icon>
+
         </div>
         
         <div class="filters-container flex flex-col">
-            <button class="filters bg-red-200">
+            <button class="filters bg-red-200 w-24 h-8 rounded text-sm">
+              
+                <fa-icon class=" text-xs " [icon]="faSlider"></fa-icon>
+
                 <span>
                     فیلتر
-                </span>
-                <span>
-                    icon
                 </span>
             </button>
         </div>
         
     </div>
     
-    <div class="doctors-list-container bg-purple-200 p-4 gap-4 flex flex-col h-full overflow-auto">
-        <div (click)="seeDoctorProfile()" class="docs-list-item bg-green-400 h-8  " ></div>
-        <div class="docs-list-item bg-green-400 h-8  " ></div>
-        <div class="docs-list-item bg-green-400 h-8  " ></div>
-        <div class="docs-list-item bg-green-400 h-8  " ></div>
-        <div class="docs-list-item bg-green-400 h-8  " ></div>
-        <div class="docs-list-item bg-green-400 h-8  " ></div>
-        <div class="docs-list-item bg-green-400 h-8  " ></div>
-        <div class="docs-list-item bg-green-400 h-8  " ></div>
-        <div class="docs-list-item bg-green-400 h-8  " ></div>
-        <div class="docs-list-item bg-green-400 h-8  " ></div>
-        <div class="docs-list-item bg-green-400 h-8  " ></div>
-        <div class="docs-list-item bg-green-400 h-8  " ></div>
-        <div class="docs-list-item bg-green-400 h-8  " ></div>
-        <div class="docs-list-item bg-green-400 h-8  " ></div>
-        <div class="docs-list-item bg-green-400 h-8  " ></div>
-        <div class="docs-list-item bg-green-400 h-8  " ></div>
-        <div class="docs-list-item bg-green-400 h-8  " ></div>
-        <div class="docs-list-item bg-green-400 h-8  " ></div>
+    <div class="doctors-list-container p-4 gap-4 flex flex-col h-[calc(100vh-160px)] overflow-y-auto ">
+        
+        <span>
+            لیست پزشکان
+        </span>
+        <app-doctors-list-item (click)="seeDoctorProfile()"></app-doctors-list-item>
+        <app-doctors-list-item></app-doctors-list-item>
+        <app-doctors-list-item></app-doctors-list-item>
+        <app-doctors-list-item></app-doctors-list-item>
+        <app-doctors-list-item></app-doctors-list-item>
+        <app-doctors-list-item></app-doctors-list-item>
+        <app-doctors-list-item></app-doctors-list-item>
+        <app-doctors-list-item></app-doctors-list-item>
+       
     </div>
 
 </div>
