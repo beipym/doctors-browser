@@ -1,5 +1,6 @@
+
 module.exports = {
-   theme: {
+  theme: {
     screens: {
       sm: '480px',
       md: '768px',
@@ -7,7 +8,7 @@ module.exports = {
       xl: '1440px',
     },
     colors: {
-      'blue'    : '#1fb6ff',
+      'blue': '#1fb6ff',
       'purple'  : '#692BEC',        //purple
       'textcolor'     : '#434343',      //text
       'searchboxgray' : '#E1E1E1',  // search box background
@@ -38,11 +39,16 @@ module.exports = {
       }
     }
   },
+  prefix: '',
   content: [
-    "./src/**/*.{html,ts}",
+    './src/**/*.{html,ts}',
   ],
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {},
   },
+  variants: {
+    extend: {},
+  },
   plugins: [],
-}
+};
