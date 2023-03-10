@@ -1,1 +1,27 @@
-<router-outlet></router-outlet>
+<div class="bottom-bar-layout-container w-full h-[100vh] flex flex-col ">
+
+    <div class="page-content h-[calc(100vh-96px)] w-full overflow-auto">
+        <router-outlet></router-outlet>
+    </div>
+
+    <div class="bottom-bar bg-red-200 w-full h-24  flex flex-row-reverse flex-auto justify-between mt-auto">
+        
+        <a class="flex flex-col p-4" [routerLink]="'home'">
+            <span>icon</span>
+            <span>صفحه اصلی</span>
+        </a>
+        <a class="flex flex-col p-4" [routerLink]="'doctors-list'">
+            <span>icon</span>
+            <span>پزشکان</span>
+        </a>
+        <a class="flex flex-col p-4" [routerLink]="'follow-up'">
+            <span>icon</span>
+            <span>فالو آپ</span>
+        </a>
+        <a class="flex flex-col p-4" [routerLink]="'user-profile'">
+            <span>icon</span>
+            <span>پروفایل</span>
+        </a>
+    </div>
+
+</div>
