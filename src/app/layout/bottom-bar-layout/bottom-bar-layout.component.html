@@ -6,28 +6,28 @@
 
     <div class="bottom-bar bg-white shadow w-full flex flex-row-reverse justify-between absolute bottom-0 ">
         
-        <a [routerLink]="'home'">
+        <a [routerLink]="'home'" [ngClass]="currentPageTitle === 'home' ? 'text-thpurple' : 'text-black'" (click)="setTitle('home')">
             
-            <fa-icon [icon]="icons.faHome"></fa-icon>
+            <fa-icon [icon]="icons.faHome" ></fa-icon>
             <span >صفحه اصلی</span>
 
         </a>
 
-        <a [routerLink]="'doctors-list'">
+        <a [routerLink]="'doctors-list'" [ngClass]="currentPageTitle === 'doctors-list' ? 'text-thpurple' : 'text-black'"  (click)="setTitle('doctors-list')">
             
             <fa-icon [icon]="icons.faStethoscope"></fa-icon>
             <span >پزشکان</span>
 
         </a>
 
-        <a [routerLink]="'follow-up'">
+        <a [routerLink]="'follow-up'" [ngClass]="currentPageTitle === 'follow-up' ? 'text-thpurple' : 'text-black'"  (click)="setTitle('follow-up')">
 
             <fa-icon [icon]="icons.faComments"></fa-icon>
             <span >فالو آپ</span>
 
         </a>
 
-        <a [routerLink]="'user-profile'">
+        <a [routerLink]="'user-profile'" [ngClass]="currentPageTitle === 'user-profile' ? 'text-thpurple' : 'text-black'"  (click)="setTitle('user-profile')">
 
             <fa-icon [icon]="icons.faUser"></fa-icon>
             <span class="text-xs " >پروفایل</span>

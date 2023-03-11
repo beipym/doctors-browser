@@ -6,7 +6,7 @@ export const appRoutes: Routes = [
     {
         path: '', 
         pathMatch : 'full',  
-        redirectTo: 'app'
+        redirectTo: 'app/doctors-list'
     },
 
     {
