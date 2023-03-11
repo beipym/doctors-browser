@@ -2,6 +2,9 @@
 
 module.exports = {
   theme: {
+    fontFamily:{
+      'estedadBold':['estedadBold']
+    },
     extend:{
 
       colors: {
@@ -13,7 +16,10 @@ module.exports = {
         'thliteyellow' : '#FFFADC', //yellow light
         'thyellow'     : '#FFD43D', //yellow
         'thlitepink'   : '#FF1F6', // pink light
-        'thpink'       : '#FB377E', //pink
+        'thpink'       : {
+          10:'#FB377E10',
+          100:'#FB377E'
+        }, //pink
         'thlitegreen'  : '#E9FFF4', // green light 
         'thgreen'      : '#00A858', //green
         'thinputplaceholder' : '#a5abb5', 

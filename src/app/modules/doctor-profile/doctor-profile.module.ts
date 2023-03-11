@@ -12,6 +12,10 @@ const doctorProfileRoutes:Routes=[
   {
     path:'',
     component:DoctorProfileComponent
+  },
+  {
+    path:':id',
+    component:DoctorProfileComponent
   }
 ]
 

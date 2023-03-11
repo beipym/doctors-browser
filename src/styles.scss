@@ -11,6 +11,11 @@ body{
     src: local("estedad"), url(./assets/fonts/Estedad-Light.ttf) format("truetype");
 }
 
+@font-face {
+    font-family: "estedadBold";
+    src: local("estedadBold"), url(./assets/fonts/Estedad-Bold.ttf) format("truetype");
+}
+
 *{
     font-family: estedad;
 }

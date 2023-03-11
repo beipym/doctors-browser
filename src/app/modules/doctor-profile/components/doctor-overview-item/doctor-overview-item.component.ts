@@ -8,9 +8,13 @@ import { icons } from 'src/assets/icons';
 })
 export class DoctorOverviewItemComponent {
 
-  @Input() title = '';
-  @Input() subTitle = '';
-  @Input() icon = '';
+  @Input() title : string | number = '';
+  @Input() titleText = '';
+  @Input() iconColorClass = '';
+  @Input() bgColorClass = '';
+
+  @Input() subTitle  : string | number = '';
+  @Input() icon = icons.faUser;
 
 
   icons = icons;

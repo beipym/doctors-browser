@@ -1,23 +1,23 @@
-<div class="doctor-overview-item flex flex-col h-24 w-24 justify-center  items-start rounded shadow">
+<div class="doctor-overview-item flex flex-col h-24 w-24 justify-center  items-start rounded shadow bg-white">
 
     <div class="doi-icon-row flex flex-row w-full justify-center items-center mb-auto">
 
-        <div class="icon-holder bg-green-200 w-8 h-10 flex justify-center rounded-b">    
+        <div class="icon-holder w-8 h-10 flex justify-center rounded-b" [ngClass]="bgColorClass">    
 
-            <fa-icon class="mx-auto text-green-800" [icon]="icons.faStethoscope"></fa-icon>
+            <fa-icon class="mx-auto py-2" [ngClass]="iconColorClass" [icon]="icon"></fa-icon>
 
         </div>
 
         
     </div>
 
-    <span class="bold mx-auto text-sm mb-auto">
-        ۱۸ سال
+    <span class="bold mx-auto text-xs mb-auto font-estedadBold">
+        {{subTitle}} 
     </span>
         
 
     <span class="bold mx-auto text-xs mb-auto">
-        سابقه طبابت
+        {{title}}{{titleText}}
     </span>
         
 </div>

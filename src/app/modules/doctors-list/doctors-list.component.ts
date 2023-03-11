@@ -33,8 +33,8 @@ export class DoctorsListComponent implements OnInit{
       )
   }
 
-  seeDoctorProfile(){
-    this._router.navigate(['doctor-profile'])
+  seeDoctorProfile(doctorId:number){
+    this._router.navigate(['doctor-profile' , doctorId])
   }
 
 }
