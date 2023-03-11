@@ -1,8 +1,8 @@
 <div class="doctor-profile-container flex flex-col w-full text-liteyellow" dir="rtl">
 
-    <div class="dp-title-bar flex flex-row flex-auto  justify-between shadow h-16 bg-white " >
+    <div class="dp-title-bar flex flex-row flex-auto  justify-between shadow h-16 bg-white items-center p-4" >
         <span>پروفایل پزشک</span>
-        <span>back icon</span>
+        <fa-icon [icon]="icons.faAngleLeft"></fa-icon>
     </div>
 
     <div class="dp-doctor-name flex flex-row flex-auto p-4">
@@ -25,41 +25,30 @@
         <app-doctor-overview-item></app-doctor-overview-item>
     </div>
 
-    <div class="dp-doctor-details-container">
-        <ng-container >
-            <div class="dp-info-accordion flex flex-row flex-auto">
-                درباره پزشک
-            </div>
-        </ng-container>
-        <ng-container >
-            <div class="dp-info-accordion flex flex-row flex-auto">
-                درباره پزشک
-            </div>
-        </ng-container>
-        <ng-container >
-            <div class="dp-info-accordion flex flex-row flex-auto">
-                درباره پزشک
-            </div>
-        </ng-container>
+    <div class="dp-doctor-details-container p-4 ">
+        
+        <dtheme-details-accordion></dtheme-details-accordion>
+        <dtheme-details-accordion></dtheme-details-accordion>
+        <dtheme-details-accordion></dtheme-details-accordion>
+
     </div>
 
-    <div class="dp-reservation-title">
+    <div class="dp-reservation-title mb-2 px-4">
         <span>
             ساعات کاری و جلسات پزشک
         </span>
     </div>
 
-    <div class="dp-reservation-cards flex flex-row flex-auto flex-wrap justify-center gap-4">
-        sda
-        <div class="flex flex-col h-8 w-8 bg-red-200"></div>
-        <div class="flex flex-col h-8 w-8 bg-red-200"></div>
-        <div class="flex flex-col h-8 w-8 bg-red-200"></div>
-        <div class="flex flex-col h-8 w-8 bg-red-200"></div>
-        <div class="flex flex-col h-8 w-8 bg-red-200"></div>
+    <div class="dp-reservation-cards flex flex-row flex-auto flex-wrap justify-start gap-2 p-4">
+        <app-doctor-reservation-card></app-doctor-reservation-card>
+        <app-doctor-reservation-card></app-doctor-reservation-card>
+        <app-doctor-reservation-card></app-doctor-reservation-card>
+        <app-doctor-reservation-card></app-doctor-reservation-card>
+        <app-doctor-reservation-card></app-doctor-reservation-card>
     </div>
 
     <div class="dp-reserve-btn-holder flex flex-row flex-auto justify-center">
-        <button>
+        <button class="shadow w-7/12 my-4 rounded bg-gray-300 text-white" disabled>
             <span>
                 ثبت و دریافت نوبت
             </span>

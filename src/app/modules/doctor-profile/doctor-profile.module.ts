@@ -5,6 +5,8 @@ import { DoctorProfileComponent } from './doctor-profile.component';
 import { ImageViewerComponent } from 'src/@dtheme/image-viewer/image-viewer.component';
 import { DoctorOverviewItemComponent } from './components/doctor-overview-item/doctor-overview-item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { DetailsAccordionComponent } from 'src/@dtheme/details-accordion/details-accordion.component';
+import { DoctorReservationCardComponent } from './components/doctor-reservation-card/doctor-reservation-card.component';
 
 const doctorProfileRoutes:Routes=[
   {
@@ -17,12 +19,14 @@ const doctorProfileRoutes:Routes=[
 @NgModule({
   declarations: [
     DoctorProfileComponent,
-    DoctorOverviewItemComponent
+    DoctorOverviewItemComponent,
+    DoctorReservationCardComponent
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(doctorProfileRoutes),
     ImageViewerComponent,
+    DetailsAccordionComponent,
     FontAwesomeModule
   ]
 })

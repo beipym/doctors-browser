@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { icons } from 'src/assets/icons';
 
 @Component({
   selector: 'app-doctor-profile',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./doctor-profile.component.scss']
 })
 export class DoctorProfileComponent {
-
+  icons = icons;
 }
