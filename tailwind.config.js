@@ -1,43 +1,25 @@
+/** @type {import('tailwindcss').Config} */
 
 module.exports = {
   theme: {
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
-    },
-    colors: {
-      'blue': '#1fb6ff',
-      'purple'  : '#692BEC',        //purple
-      'textcolor'     : '#434343',      //text
-      'searchboxgray' : '#E1E1E1',  // search box background
-      'disabledgray'  : '#D0D0D0',  //disabled 
-      'bodygray'   : '#F4F8F8', //body
-      'liteyellow' : '#FFFADC', //yellow light
-      'yellow'     : '#FFD43D', //yellow
-      'litepink'   : '#FF1F6', // pink light
-      'pink'      : '#FB377E', //pink
-      'litegreen' : '#E9FFF4', // green light 
-      'green'     : '#00A858', //green
-    },
-    fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
-      estedad: ['estedad' , 'estedad']
-    },
-    extend: {
-      spacing: {
-        '128': '32rem',
-        '144': '36rem',
+    extend:{
+
+      colors: {
+        'thpurple'        : '#692BEC',        //purple
+        'thtextcolor'     : '#434343',      //text
+        'thsearchboxbg'   : '#E1E1E1',  // search box background
+        'thdisabled'      : '#D0D0D0',  //disabled 
+        'thbodygray'   : '#F4F8F8', //body
+        'thliteyellow' : '#FFFADC', //yellow light
+        'thyellow'     : '#FFD43D', //yellow
+        'thlitepink'   : '#FF1F6', // pink light
+        'thpink'       : '#FB377E', //pink
+        'thlitegreen'  : '#E9FFF4', // green light 
+        'thgreen'      : '#00A858', //green
+        'thinputplaceholder' : '#a5abb5', 
+
       },
-      borderRadius: {
-        '4xl': '2rem',
-      },
-      backgroundImage: {
-        // 'application': "url('/img/hero-pattern.svg')",
-        // 'footer-texture': "url('/img/footer-texture.png')",
-      }
+
     }
   },
   prefix: '',
@@ -45,11 +27,8 @@ module.exports = {
     './src/**/*.{html,ts}',
   ],
   darkMode: 'class', // or 'media' or 'class'
-  theme: {
-    extend: {},
-  },
   variants: {
     extend: {},
   },
   plugins: [],
-};
+}
