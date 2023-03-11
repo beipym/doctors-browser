@@ -29,9 +29,9 @@
 
     <div class="dp-doctor-details-container p-4 ">
         
-        <dtheme-details-accordion></dtheme-details-accordion>
-        <dtheme-details-accordion></dtheme-details-accordion>
-        <dtheme-details-accordion></dtheme-details-accordion>
+        <dtheme-details-accordion [title]="'درباره پزشک'" [details]="doctorData.aboutDoctor"></dtheme-details-accordion>
+        <dtheme-details-accordion [title]="'تحصیلات'" [details]="doctorData.education"></dtheme-details-accordion>
+        <dtheme-details-accordion [title]="'تجربیات و دستاورد ها'" [details]="doctorData.achievements"></dtheme-details-accordion>
 
     </div>
 
@@ -42,15 +42,11 @@
     </div>
 
     <div class="dp-reservation-cards flex flex-row flex-auto flex-wrap justify-start gap-2 p-4">
-        <app-doctor-reservation-card></app-doctor-reservation-card>
-        <app-doctor-reservation-card></app-doctor-reservation-card>
-        <app-doctor-reservation-card></app-doctor-reservation-card>
-        <app-doctor-reservation-card></app-doctor-reservation-card>
-        <app-doctor-reservation-card></app-doctor-reservation-card>
+        <app-doctor-reservation-card *ngFor="let item of doctorData.daysAndHours" [title]="item.day" [hours]="item.hours"></app-doctor-reservation-card>
     </div>
 
     <div class="dp-reserve-btn-holder flex flex-row flex-auto justify-center p-4 h-fit">
-        <button class="shadow w-full h-8 my-4 rounded bg-gray-300 text-white" disabled>
+        <button class="shadow w-full h-8 my-4 rounded bg-thdisabled text-white" disabled>
             <span>
                 ثبت و دریافت نوبت
             </span>

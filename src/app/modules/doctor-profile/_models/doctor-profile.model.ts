@@ -6,4 +6,8 @@ export interface doctorProfileModel extends DoctorListItemModel{
     aboutDoctor  : string,
     education    : string,
     achievements : string,
+    daysAndHours? : {
+        day:string;
+        hours:string;
+    }[]
 }
