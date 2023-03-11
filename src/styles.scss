@@ -6,3 +6,12 @@
 body{
     background-color: #F4F8F8;
 }
+
+@font-face {
+    font-family: "estedad";
+    src: local("estedad"), url(./assets/fonts/Estedad-Light.ttf) format("truetype");
+}
+
+*{
+    font-family: estedad;
+}
