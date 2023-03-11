@@ -1,29 +1,28 @@
 <div class="doctor-profile-container flex flex-col w-full text-liteyellow" dir="rtl">
 
-    <div class="dp-title-bar flex flex-row flex-auto  justify-between shadow h-16 bg-white" >
+    <div class="dp-title-bar flex flex-row flex-auto  justify-between shadow h-16 bg-white " >
         <span>پروفایل پزشک</span>
         <span>back icon</span>
     </div>
 
-    <div class="dp-doctor-name flex flex-row flex-auto">
-        <div class="flex flex-col">
-
-            <span>image</span>
+    <div class="dp-doctor-name flex flex-row flex-auto p-4">
+        <div class="flex flex-col justify-center items-center">
+            <dtheme-image-viewer></dtheme-image-viewer>
         </div>
-        <div class="flex flex-col">
-            <span>
+        <div class="flex flex-col p-4 ">
+            <span class="text-sm mb-2">
                 دکتر فرخی
             </span>
-            <span>
+            <span class="text-xs">
                 متخصص مغز و اعصاب
             </span>
         </div>
     </div>
 
-    <div class="dp-doctor-overview flex flex-row flex-auto">
-        <span>item1</span>
-        <span>item1</span>
-        <span>item1</span>
+    <div class="dp-doctor-overview flex flex-row flex-auto justify-between px-4">
+        <app-doctor-overview-item></app-doctor-overview-item>
+        <app-doctor-overview-item></app-doctor-overview-item>
+        <app-doctor-overview-item></app-doctor-overview-item>
     </div>
 
     <div class="dp-doctor-details-container">
