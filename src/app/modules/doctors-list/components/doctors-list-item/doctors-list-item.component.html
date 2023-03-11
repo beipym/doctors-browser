@@ -1,19 +1,20 @@
 <div class="doctors-list-item bg-white h-20 rounded-xl flex flex-row shadow">
 
     <div class="dli-image flex flex-col h-full w-3/12 justify-center items-center ">
-        <dtheme-image-viewer></dtheme-image-viewer>
+        <dtheme-image-viewer [imgSrc]="imageUrl"></dtheme-image-viewer>
     </div>
 
     <div class="dli-details flex flex-col h-full w-7/12 place-content-between p-1">
 
-        <span class="text-sm text-bold">
-            رضا رحیمی
+        <span class="text-sm font-bold">
+            {{doctorsName}}
         </span>
         <span class="text-sm text-ellipsis truncate">
-            فوق تخصص گوارش و بیماری های گوارشی
+            {{profession}}
         </span>
         <span class="text-xs">
-            ۱۳ سال سابقه
+            {{yearsActive}}
+            سال سابقه
         </span>
 
     </div>

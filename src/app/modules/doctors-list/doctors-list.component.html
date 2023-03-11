@@ -5,7 +5,7 @@
         <div class="search-input-container flex flex-col relative w-full">
             <input class="h-8 w-full rounded bg-thsearchboxbg indent-6 text-xs" placeholder="جست و جوی نام،کد پذیرش و ..."  type="text">
             
-            <fa-icon class="absolute text-xs p-2 text-thinputplaceholder" [icon]="faSearch"></fa-icon>
+            <fa-icon class="absolute text-xs p-2 text-thinputplaceholder" [icon]="icons.faSearch"></fa-icon>
 
         </div>
         
@@ -16,7 +16,7 @@
                     فیلتر
                 </span>
 
-                <fa-icon class=" text-xs  mx-2" [icon]="faSlider"></fa-icon>
+                <fa-icon class=" text-xs  mx-2" [icon]="icons.faSliders"></fa-icon>
                 
             </button>
         </div>
@@ -28,14 +28,15 @@
         <span>
             لیست پزشکان
         </span>
-        <app-doctors-list-item (click)="seeDoctorProfile()"></app-doctors-list-item>
-        <app-doctors-list-item></app-doctors-list-item>
-        <app-doctors-list-item></app-doctors-list-item>
-        <app-doctors-list-item></app-doctors-list-item>
-        <app-doctors-list-item></app-doctors-list-item>
-        <app-doctors-list-item></app-doctors-list-item>
-        <app-doctors-list-item></app-doctors-list-item>
-        <app-doctors-list-item></app-doctors-list-item>
+
+        <app-doctors-list-item *ngFor="let doctor of doctors" 
+            [doctorsName]="doctor.name"
+            [profession]="doctor.profession"
+            [yearsActive]="doctor.yearsActive"
+            [imageUrl]="doctor.avatar" 
+            (click)="seeDoctorProfile()">
+        </app-doctors-list-item>
+             
        
     </div>
 

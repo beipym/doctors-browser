@@ -1,6 +1,7 @@
 export interface DoctorListItemModel{
+    id:number;
     name:string;
-    caption:string;
-    summary:string;
-    profileImage:string;
+    profession:string;
+    yearsActive:string;
+    avatar:string;
 }

@@ -10,7 +10,7 @@ export class DoctorsListItemComponent {
   @Input() imageUrl : string;
   @Input() doctorsName : string;
   @Input() profession : string;
-  @Input() history : string;
+  @Input() yearsActive : string;
 
   faLeft = faAngleLeft;
 
@@ -18,7 +18,7 @@ export class DoctorsListItemComponent {
     this.imageUrl = '';
     this.doctorsName = '';
     this.profession = '';
-    this.history = '';
+    this.yearsActive = '';
   }
 
 }

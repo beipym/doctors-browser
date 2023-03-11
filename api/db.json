@@ -5,43 +5,50 @@
             "id":1 ,
             "name":"علی رمضانی",
             "profession":"متخصص داخلی",
-            "years-active":"12"
+            "yearsActive":"12",
+            "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/682.jpg"
         },
         { 
             "id":2 ,
             "name":" علی رمضانی نسب",
             "profession":"متخصص داخلی و اطفال",
-            "years-active":"14"
+            "yearsActive":"14",
+            "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/587.jpg"
         },
         { 
             "id":3 ,
             "name":"علی سعیدیان",
             "profession":"متخصص پوست و مو ",
-            "years-active":"8"
+            "yearsActive":"8",
+            "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/7.jpg"
         },
         { 
             "id":4 ,
             "name":"محسن یگانه",
             "profession":"گوش، حلق و بینی",
-            "years-active":"9"
+            "yearsActive":"9",
+            "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/896.jpg"
         },
         { 
             "id":5 ,
             "name":"سعید آسایش دوست",
             "profession":"متخصص ارتوپدی",
-            "years-active":"10"
+            "yearsActive":"10",
+            "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1085.jpg"
         },
         { 
             "id":6 ,
             "name":"امیرحسین مقصودیان",
             "profession":"متخصص مغز و اعصاب",
-            "years-active":"12"
+            "yearsActive":"12",
+            "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/970.jpg"
         },
         { 
             "id":7 ,
             "name":"بیژن حمیدیان",
             "profession":"متخصص قلب و عروق",
-            "years-active":"12"
+            "yearsActive":"12",
+            "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/542.jpg"
         }
     ]
 }
