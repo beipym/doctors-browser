@@ -5,6 +5,7 @@ import { AppRoutingModule } from 'src/app-routes/app-routing.module';
 import { AppComponent } from './app.component';
 import { BottomBarLayoutModule } from './layout/bottom-bar-layout/bottom-bar-layout.module';
 import { LayoutModule } from './layout/layout.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { LayoutModule } from './layout/layout.module';
     BrowserModule,
     AppRoutingModule,
     LayoutModule,
-    BottomBarLayoutModule
+    BottomBarLayoutModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

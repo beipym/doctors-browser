@@ -1,7 +1,22 @@
-<div class="details-accordion flex flex-row border border-purple shadow-sm justify-between rounded px-2 my-2 bg-white h-8 items-center" dir="rtl">
-    <span>{{title}}</span>
-    <button>
+<div class="details-accordion justify-between rounded  my-2 items-center " dir="rtl">
 
-        <fa-icon [icon]="icons.faAngleLeft"></fa-icon>
-    </button>
+    <mat-accordion class="w-full" >
+        <mat-expansion-panel hideToggle class="text-xs" dir="rtl">
+        <mat-expansion-panel-header class="h-8 ">
+            <mat-panel-title>
+                {{title}}
+            </mat-panel-title>
+            <mat-panel-description>
+                  
+                <fa-icon [icon]="icons.faAngleLeft" class="text-thpurple text-sm mr-auto"></fa-icon>
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        {{details}}
+
+        </mat-expansion-panel>
+    </mat-accordion>
+
 </div>
+
+  
