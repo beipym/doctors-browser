@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { icons } from 'src/assets/icons';
 
 @Component({
   selector: 'bottom-bar-layout',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class BottomBarLayoutComponent {
 
+  icons = icons;
 }
